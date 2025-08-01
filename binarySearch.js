@@ -8,8 +8,8 @@ function findIndex(target, sortedArray) {
 
     function binarySearch(startIndex, endIndex) {
         if (startIndex > endIndex) {
-            console.log('\'startIndex\' is greater than \'endIndex\'. Returning -1.')
-            return -1
+            console.log('Error: \'startIndex\' is greater than \'endIndex\'.')
+            return undefined
         }
 
         const currentMiddleIndex = Math.floor((startIndex + endIndex) / 2)
